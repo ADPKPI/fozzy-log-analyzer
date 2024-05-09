@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>main API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>main</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import tkinter as tk
+from tkinter import ttk, filedialog, messagebox, font
+from datetime import datetime, timedelta
+import pandas as pd
+import re
+import pytz
+import socket
+
+def get_hostname(ip):
+    &#34;&#34;&#34;Получение HostName по IP&#34;&#34;&#34;
+    try:
+        hostname, _, _ = socket.gethostbyaddr(ip)
+        return hostname
+    except socket.herror:
+        return &#34;Hostname Not Found&#34;
+
+def get_date_from_entry(entry):
+    &#34;&#34;&#34;&#34;Получение даты из поля&#34;&#34;&#34;
+    date_str = entry.get()
+    try:
+        date = datetime.strptime(date_str, &#34;%d.%m.%Y&#34;).date()
+        return date
+    except ValueError:
+        messagebox.showerror(&#34;Error&#34;, &#34;Invalid date format&#34;)
+        return None
+
+def load_log_file():
+    &#34;&#34;&#34;Обработка загрузки файла и парсинг логов&#34;&#34;&#34;
+    file_path = filedialog.askopenfilename()
+    ip_text.delete(&#39;1.0&#39;, tk.END)
+    if not file_path:
+        return
+    try:
+        with open(file_path, &#39;r&#39;) as file:
+            log_pattern = r&#39;(\d+\.\d+\.\d+\.\d+) - - \[(.*?)\] &#34;(.*?)&#34; (\d{3}) (\d+) &#34;(.*?)&#34; &#34;(.*?)&#34;&#39;
+            log_data = []
+            for line in file:
+                match = re.match(log_pattern, line)
+                if match:
+                    ip, datetime_str, request_str, status, size, referrer, user_agent = match.groups()
+                    method, path, protocol = request_str.split()
+                    datetime_obj = datetime.strptime(datetime_str, &#34;%d/%b/%Y:%H:%M:%S %z&#34;)
+                    log_data.append([ip, datetime_obj, path, status, user_agent])
+
+            df = pd.DataFrame(log_data, columns=[&#39;IP&#39;, &#39;DateTime&#39;, &#39;Path&#39;, &#39;Status&#39;, &#39;UserAgent&#39;])
+            analyze_logs(df)
+    except:
+        messagebox.showerror(&#34;Error&#34;, &#34;Could not read the file&#34;)
+
+def analyze_logs(df):
+    &#34;&#34;&#34;Выборка логов по времени. Приведение к нужному формату и вызов обновлений GUI&#34;&#34;&#34;
+    df[&#39;DateTime&#39;] = df[&#39;DateTime&#39;].dt.tz_convert(pytz.utc)
+
+    start_date = get_date_from_entry(start_date_entry)
+    start_time = start_time_entry.get()
+    end_date = get_date_from_entry(end_date_entry)
+    end_time = end_time_entry.get()
+
+    if start_time and end_time:
+        tz = pytz.utc
+        start_datetime = datetime.combine(start_date, datetime.strptime(start_time, &#34;%H:%M&#34;).time()).replace(tzinfo=tz)
+        end_datetime = datetime.combine(end_date, datetime.strptime(end_time, &#34;%H:%M&#34;).time()).replace(tzinfo=tz)
+        df = df[(df[&#39;DateTime&#39;] &gt;= start_datetime) &amp; (df[&#39;DateTime&#39;] &lt;= end_datetime)]
+
+    total_requests = df.shape[0]
+    total_requests_label.config(text=f&#34;Total Requests: {total_requests}&#34;)
+    total_unique_ips_label.config(text=f&#34;Total Unique IPs: {df[&#39;IP&#39;].nunique()}&#34;)
+
+    ip_counts = df[&#39;IP&#39;].value_counts().reset_index()
+    ip_counts.columns = [&#39;IP&#39;, &#39;Requests&#39;]
+    ip_counts[&#39;Percentage&#39;] = (ip_counts[&#39;Requests&#39;] / total_requests * 100).round(2)
+    ip_counts[&#39;Percentage&#39;] = ip_counts[&#39;Percentage&#39;].apply(lambda x: f&#34;{x:.2f}%&#34;)
+
+    update_ip_list(ip_counts)
+    update_status_table(df)
+    update_path_table(df)
+    update_user_agent_table(df)
+
+
+def format_for_clipboard(top_ips):
+    &#34;&#34;&#34;Генерация таблицы для копирования в биллинг&#34;&#34;&#34;
+    headers = &#34;| IP | Host | Requests | Check Host |&#34;
+    separator = &#34;| --- | --- | --- | --- |&#34;
+
+    rows = []
+    for _, row in top_ips.iterrows():
+        ip = row[&#39;IP&#39;]
+        host = row[&#39;Hostname&#39;]
+        requests = str(row[&#39;Requests&#39;])
+        check_host = f&#34;[Check Host](https://check-host.net/ip-info?host={ip})&#34;
+        rows.append(f&#34;| {ip} | {host} | {requests} | {check_host} |&#34;)
+
+    result = &#34;\n&#34;.join([headers, separator] + rows)
+    return result
+
+
+def copy_top_ips():
+    &#34;&#34;&#34;Копирование таблицы в буфер обмена&#34;&#34;&#34;
+    top_n = int(top_n_entry.get())
+    if top_n == 0 or top_n &lt;= 0:
+        messagebox.showerror(&#34;Error&#34;, &#34;Top IPs number must be an integer greater than 0&#34;)
+        return
+    top_ips = ip_counts.head(top_n)
+    top_ips.loc[:, &#39;Hostname&#39;] = top_ips[&#39;IP&#39;].apply(get_hostname)
+    formatted_text = format_for_clipboard(top_ips)
+    root.clipboard_clear()
+    root.clipboard_append(formatted_text)
+    messagebox.showinfo(&#34;Success&#34;, &#34;Data copied to clipboard&#34;)
+
+def update_status_table(df):
+    &#34;&#34;&#34;Обновление таблицы со статусами&#34;&#34;&#34;
+    for row in status_table.get_children():
+        status_table.delete(row)
+    status_counts = df[&#39;Status&#39;].value_counts().reset_index()
+    status_counts.columns = [&#39;Status&#39;, &#39;Count&#39;]
+    total_requests = sum(status_counts[&#39;Count&#39;])
+
+    for index, row in status_counts.iterrows():
+        percent = (row[&#39;Count&#39;] / total_requests * 100)
+        status_table.insert(&#34;&#34;, tk.END, values=(row[&#39;Status&#39;], row[&#39;Count&#39;], f&#34;{percent:.2f}%&#34;))
+
+def update_user_agent_table(df):
+    &#34;&#34;&#34;Обновление таблицы с User-agent&#34;&#34;&#34;
+    user_agent_table.delete(*user_agent_table.get_children())
+    user_agent_counts = df[&#39;UserAgent&#39;].value_counts().reset_index()
+    user_agent_counts.columns = [&#39;UserAgent&#39;, &#39;Requests&#39;]
+    total_requests = sum(user_agent_counts[&#39;Requests&#39;])
+
+    for index, row in user_agent_counts.iterrows():
+        percent = (row[&#39;Requests&#39;] / total_requests * 100) if total_requests &gt; 0 else 0
+        user_agent_table.insert(&#34;&#34;, tk.END, values=(row[&#39;UserAgent&#39;], row[&#39;Requests&#39;], f&#34;{percent:.2f}%&#34;))
+
+
+def update_path_table(df):
+    &#34;&#34;&#34;Обновление таблицы с URL&#34;&#34;&#34;
+    for row in path_table.get_children():
+        path_table.delete(row)
+    path_counts = df[&#39;Path&#39;].value_counts().reset_index()
+    path_counts.columns = [&#39;Path&#39;, &#39;Requests&#39;]
+    total_requests = sum(path_counts[&#39;Requests&#39;])
+
+    for index, row in path_counts.iterrows():
+        percent = (row[&#39;Requests&#39;] / total_requests * 100)
+        path_table.insert(&#34;&#34;, tk.END, values=(row[&#39;Path&#39;], row[&#39;Requests&#39;], f&#34;{percent:.2f}%&#34;))
+
+def copy_from_text(event):
+    &#34;&#34;&#34;Копирование из текстового поля с сортировкой IP&#34;&#34;&#34;
+
+    try:
+        root.clipboard_clear()
+        root.clipboard_append(root.selection_get())
+    except tk.TclError:
+        pass
+
+def copy_selected_rows(table):
+    &#34;&#34;&#34;Копирование из таблицы&#34;&#34;&#34;
+    selected_items = table.selection()
+    rows_data = []
+    for item in selected_items:
+        item_values = table.item(item, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item_values))
+    copied_text = &#34;\n&#34;.join(rows_data)
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)
+    messagebox.showinfo(&#34;Success&#34;, &#34;Selected rows copied to clipboard&#34;)
+
+def tree_popup(event, menu):
+    &#34;&#34;&#34;Всплывающее меню для копирования из таблиц (в самих таблицах бинл на ПКМ)&#34;&#34;&#34;
+    region = event.widget.identify_region(event.x, event.y)
+    if region == &#34;cell&#34;:
+        menu.post(event.x_root, event.y_root)
+
+def update_ip_list(data_frame):
+    &#34;&#34;&#34;Обновление текстового поля с отсортироваными по запросам IP&#34;&#34;&#34;
+    global ip_counts
+    ip_counts = data_frame
+    ip_text.insert(tk.END, ip_counts.to_string(index=False))
+
+def copy_selected_rows_status():
+    &#34;&#34;&#34;Копирование из таблицы статусов&#34;&#34;&#34;
+    selected_ids = status_table.selection()  # Получаем ID всех выбранных элементов
+    rows_data = []
+    for item_id in selected_ids:
+        item = status_table.item(item_id, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item))  # Формируем строку значений для каждого элемента
+    copied_text = &#34;\n&#34;.join(rows_data)  # Соединяем все строки в одну строку, разделяя переводом строки
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)  # Копируем строку в буфер обмена
+
+def copy_selected_rows_path():
+    &#34;&#34;&#34;Копирование из таблицы URL&#34;&#34;&#34;
+    selected_ids = path_table.selection()  # Получаем ID всех выбранных элементов
+    rows_data = []
+    for item_id in selected_ids:
+        item = path_table.item(item_id, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item))  # Формируем строку значений для каждого элемента
+    copied_text = &#34;\n&#34;.join(rows_data)  # Соединяем все строки в одну строку, разделяя переводом строки
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)  # Копируем строку в буфер обмена
+
+def copy_selected_rows_user():
+    &#34;&#34;&#34;Копирование из таблицы User-agent&#34;&#34;&#34;
+    selected_ids = user_agent_table.selection()  # Получаем ID всех выбранных элементов
+    rows_data = []
+    for item_id in selected_ids:
+        item = user_agent_table.item(item_id, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item))  # Формируем строку значений для каждого элемента
+    copied_text = &#34;\n&#34;.join(rows_data)  # Соединяем все строки в одну строку, разделяя переводом строки
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)  # Копируем строку в буфер обмена
+
+#Визуал
+root = tk.Tk()
+root.title(&#34;Fozzy Log Analyzer&#34;)
+root.geometry(&#39;700x900&#39;)
+
+customFont = font.Font(family=&#34;Helvetica&#34;, size=16)
+
+frame_center_date = tk.Frame(root)
+frame_center_date.pack(pady=5)
+
+frame_center_ips = tk.Frame(root)
+frame_center_ips.pack(pady=5)
+
+frame_date_time = tk.Frame(frame_center_date)
+frame_date_time.pack(fill=&#39;x&#39;, pady=5)
+
+frame_controls = tk.Frame(frame_center_ips)
+frame_controls.pack(fill=&#39;x&#39;, padx=20, pady=5)
+
+frame_tables = tk.Frame(root)
+frame_tables.pack(fill=&#39;both&#39;, expand=True, padx=20, pady=5)
+
+start_date_entry = tk.Entry(frame_date_time, width=16, borderwidth=2, font=customFont)
+start_date_entry.insert(0, (datetime.now() - timedelta(days=1)).strftime(&#34;%d.%m.%Y&#34;))
+start_date_entry.grid(row=0, column=0, padx=5, pady=5)
+
+start_time_entry = tk.Entry(frame_date_time, font=customFont, width=5, justify=&#39;center&#39;)
+start_time_entry.insert(0, &#34;00:00&#34;)
+start_time_entry.grid(row=0, column=1, padx=5, pady=5)
+
+end_date_entry = tk.Entry(frame_date_time, width=16, borderwidth=2, font=customFont)
+end_date_entry.insert(0, datetime.now().strftime(&#34;%d.%m.%Y&#34;))
+end_date_entry.grid(row=1, column=0, padx=5, pady=5)
+
+end_time_entry = tk.Entry(frame_date_time, font=customFont, width=5, justify=&#39;center&#39;)
+end_time_entry.insert(0, datetime.now().strftime(&#34;%H:%M&#34;))
+end_time_entry.grid(row=1, column=1, padx=5, pady=5)
+
+load_button = tk.Button(frame_date_time, text=&#34;Load Log File&#34;, command=load_log_file, font=customFont)
+load_button.grid(row=1, column=2, padx=5, pady=5)
+
+total_requests_label = tk.Label(frame_controls, text=&#34;Total Requests: 0&#34;, font=font.Font(family=&#34;Helvetica&#34;, size=16, weight=&#34;bold&#34;))
+total_requests_label.grid(row=1, column=0, padx=5)
+
+total_unique_ips_label = tk.Label(frame_controls, text=&#34;Total Unique IPs: 0&#34;, font=font.Font(family=&#34;Helvetica&#34;, size=16, weight=&#34;bold&#34;))
+total_unique_ips_label.grid(row=2, column=0, padx=5, pady=5)
+
+ip_text = tk.Text(frame_controls, height=10, width=50)
+ip_text.grid(row = 3, column = 0)
+ip_text.bind(&#34;&lt;Control-c&gt;&#34;, copy_from_text)
+
+top_n_entry = tk.Entry(frame_controls, font=customFont, justify=&#39;center&#39;)
+top_n_entry.insert(0, 10)
+top_n_entry.grid(row=4, column=0, padx=5, pady=5)
+
+copy_button = tk.Button(frame_controls, text=&#34;Copy Top IPs&#34;, command=copy_top_ips, font=customFont)
+copy_button.grid(row=5, column=0, padx=5, pady=5)
+
+tree_menu = tk.Menu(root, tearoff=0)
+tree_menu.add_command(label=&#34;Copy From Status Table&#34;, command=copy_selected_rows_status)
+tree_menu.add_command(label=&#34;Copy From Path Table&#34;, command=copy_selected_rows_path)
+tree_menu.add_command(label=&#34;Copy From User Agent Table&#34;, command=copy_selected_rows_user)
+
+tree_menu_status = tk.Menu(root, tearoff=0)
+tree_menu_status.add_command(label=&#34;Copy&#34;, command=lambda: copy_selected_rows(status_table))
+
+tree_menu_path = tk.Menu(root, tearoff=0)
+tree_menu_path.add_command(label=&#34;Copy&#34;, command=lambda: copy_selected_rows(path_table))
+
+tree_menu_user = tk.Menu(root, tearoff=0)
+tree_menu_user.add_command(label=&#34;Copy&#34;, command=lambda: copy_selected_rows(user_agent_table))
+
+status_table = ttk.Treeview(frame_tables, columns=(&#34;Status&#34;, &#34;Count&#34;, &#34;Percentage&#34;), show=&#34;headings&#34;, height=5, selectmode=&#39;extended&#39;)
+status_table.heading(&#39;Status&#39;, text=&#39;Status&#39;)
+status_table.heading(&#39;Count&#39;, text=&#39;Count&#39;)
+status_table.heading(&#39;Percentage&#39;, text=&#39;Percentage&#39;)
+status_table.bind(&#34;&lt;Button-2&gt;&#34;, lambda event: tree_popup(event, tree_menu_status))  # Для Windows используйте &lt;Button-3&gt;, для macOS &lt;Button-2&gt;
+status_table.pack(fill=&#39;both&#39;, expand=True, padx=5, pady=5)
+
+path_table = ttk.Treeview(frame_tables, columns=(&#34;Path&#34;, &#34;Requests&#34;, &#34;Percentage&#34;), show=&#34;headings&#34;, height=5, selectmode=&#39;extended&#39;)
+path_table.heading(&#39;Path&#39;, text=&#39;Path&#39;)
+path_table.heading(&#39;Requests&#39;, text=&#39;Requests&#39;)
+path_table.heading(&#39;Percentage&#39;, text=&#39;Percentage&#39;)
+path_table.bind(&#34;&lt;Button-2&gt;&#34;, lambda event: tree_popup(event, tree_menu_path))
+path_table.pack(fill=&#39;both&#39;, expand=True, padx=5, pady=5)
+
+user_agent_table = ttk.Treeview(frame_tables, columns=(&#34;UserAgent&#34;, &#34;Count&#34;, &#34;Percentage&#34;), show=&#34;headings&#34;, height=5, selectmode=&#39;extended&#39;)
+user_agent_table.heading(&#39;UserAgent&#39;, text=&#39;User Agent&#39;)
+user_agent_table.heading(&#39;Count&#39;, text=&#39;Count&#39;)
+user_agent_table.heading(&#39;Percentage&#39;, text=&#39;Percentage&#39;)
+user_agent_table.bind(&#34;&lt;Button-2&gt;&#34;, lambda event: tree_popup(event, tree_menu_user))
+user_agent_table.pack(fill=&#39;both&#39;, expand=True, padx=5, pady=5)
+
+
+#Запуск приложения
+try:
+    root.mainloop()
+except Exception as e:
+    print(f&#34;An error occurred: {e}&#34;)
+    messagebox.showerror(&#34;Error&#34;, f&#34;An error occurred: {e}&#34;)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="main.analyze_logs"><code class="name flex">
+<span>def <span class="ident">analyze_logs</span></span>(<span>df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Выборка логов по времени. Приведение к нужному формату и вызов обновлений GUI</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def analyze_logs(df):
+    &#34;&#34;&#34;Выборка логов по времени. Приведение к нужному формату и вызов обновлений GUI&#34;&#34;&#34;
+    df[&#39;DateTime&#39;] = df[&#39;DateTime&#39;].dt.tz_convert(pytz.utc)
+
+    start_date = get_date_from_entry(start_date_entry)
+    start_time = start_time_entry.get()
+    end_date = get_date_from_entry(end_date_entry)
+    end_time = end_time_entry.get()
+
+    if start_time and end_time:
+        tz = pytz.utc
+        start_datetime = datetime.combine(start_date, datetime.strptime(start_time, &#34;%H:%M&#34;).time()).replace(tzinfo=tz)
+        end_datetime = datetime.combine(end_date, datetime.strptime(end_time, &#34;%H:%M&#34;).time()).replace(tzinfo=tz)
+        df = df[(df[&#39;DateTime&#39;] &gt;= start_datetime) &amp; (df[&#39;DateTime&#39;] &lt;= end_datetime)]
+
+    total_requests = df.shape[0]
+    total_requests_label.config(text=f&#34;Total Requests: {total_requests}&#34;)
+    total_unique_ips_label.config(text=f&#34;Total Unique IPs: {df[&#39;IP&#39;].nunique()}&#34;)
+
+    ip_counts = df[&#39;IP&#39;].value_counts().reset_index()
+    ip_counts.columns = [&#39;IP&#39;, &#39;Requests&#39;]
+    ip_counts[&#39;Percentage&#39;] = (ip_counts[&#39;Requests&#39;] / total_requests * 100).round(2)
+    ip_counts[&#39;Percentage&#39;] = ip_counts[&#39;Percentage&#39;].apply(lambda x: f&#34;{x:.2f}%&#34;)
+
+    update_ip_list(ip_counts)
+    update_status_table(df)
+    update_path_table(df)
+    update_user_agent_table(df)</code></pre>
+</details>
+</dd>
+<dt id="main.copy_from_text"><code class="name flex">
+<span>def <span class="ident">copy_from_text</span></span>(<span>event)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Копирование из текстового поля с сортировкой IP</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_from_text(event):
+    &#34;&#34;&#34;Копирование из текстового поля с сортировкой IP&#34;&#34;&#34;
+
+    try:
+        root.clipboard_clear()
+        root.clipboard_append(root.selection_get())
+    except tk.TclError:
+        pass</code></pre>
+</details>
+</dd>
+<dt id="main.copy_selected_rows"><code class="name flex">
+<span>def <span class="ident">copy_selected_rows</span></span>(<span>table)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Копирование из таблицы</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_selected_rows(table):
+    &#34;&#34;&#34;Копирование из таблицы&#34;&#34;&#34;
+    selected_items = table.selection()
+    rows_data = []
+    for item in selected_items:
+        item_values = table.item(item, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item_values))
+    copied_text = &#34;\n&#34;.join(rows_data)
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)
+    messagebox.showinfo(&#34;Success&#34;, &#34;Selected rows copied to clipboard&#34;)</code></pre>
+</details>
+</dd>
+<dt id="main.copy_selected_rows_path"><code class="name flex">
+<span>def <span class="ident">copy_selected_rows_path</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Копирование из таблицы URL</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_selected_rows_path():
+    &#34;&#34;&#34;Копирование из таблицы URL&#34;&#34;&#34;
+    selected_ids = path_table.selection()  # Получаем ID всех выбранных элементов
+    rows_data = []
+    for item_id in selected_ids:
+        item = path_table.item(item_id, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item))  # Формируем строку значений для каждого элемента
+    copied_text = &#34;\n&#34;.join(rows_data)  # Соединяем все строки в одну строку, разделяя переводом строки
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)  # Копируем строку в буфер обмена</code></pre>
+</details>
+</dd>
+<dt id="main.copy_selected_rows_status"><code class="name flex">
+<span>def <span class="ident">copy_selected_rows_status</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Копирование из таблицы статусов</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_selected_rows_status():
+    &#34;&#34;&#34;Копирование из таблицы статусов&#34;&#34;&#34;
+    selected_ids = status_table.selection()  # Получаем ID всех выбранных элементов
+    rows_data = []
+    for item_id in selected_ids:
+        item = status_table.item(item_id, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item))  # Формируем строку значений для каждого элемента
+    copied_text = &#34;\n&#34;.join(rows_data)  # Соединяем все строки в одну строку, разделяя переводом строки
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)  # Копируем строку в буфер обмена</code></pre>
+</details>
+</dd>
+<dt id="main.copy_selected_rows_user"><code class="name flex">
+<span>def <span class="ident">copy_selected_rows_user</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Копирование из таблицы User-agent</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_selected_rows_user():
+    &#34;&#34;&#34;Копирование из таблицы User-agent&#34;&#34;&#34;
+    selected_ids = user_agent_table.selection()  # Получаем ID всех выбранных элементов
+    rows_data = []
+    for item_id in selected_ids:
+        item = user_agent_table.item(item_id, &#39;values&#39;)
+        rows_data.append(&#34;\t&#34;.join(item))  # Формируем строку значений для каждого элемента
+    copied_text = &#34;\n&#34;.join(rows_data)  # Соединяем все строки в одну строку, разделяя переводом строки
+    root.clipboard_clear()
+    root.clipboard_append(copied_text)  # Копируем строку в буфер обмена</code></pre>
+</details>
+</dd>
+<dt id="main.copy_top_ips"><code class="name flex">
+<span>def <span class="ident">copy_top_ips</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Копирование таблицы в буфер обмена</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_top_ips():
+    &#34;&#34;&#34;Копирование таблицы в буфер обмена&#34;&#34;&#34;
+    top_n = int(top_n_entry.get())
+    if top_n == 0 or top_n &lt;= 0:
+        messagebox.showerror(&#34;Error&#34;, &#34;Top IPs number must be an integer greater than 0&#34;)
+        return
+    top_ips = ip_counts.head(top_n)
+    top_ips.loc[:, &#39;Hostname&#39;] = top_ips[&#39;IP&#39;].apply(get_hostname)
+    formatted_text = format_for_clipboard(top_ips)
+    root.clipboard_clear()
+    root.clipboard_append(formatted_text)
+    messagebox.showinfo(&#34;Success&#34;, &#34;Data copied to clipboard&#34;)</code></pre>
+</details>
+</dd>
+<dt id="main.format_for_clipboard"><code class="name flex">
+<span>def <span class="ident">format_for_clipboard</span></span>(<span>top_ips)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Генерация таблицы для копирования в биллинг</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def format_for_clipboard(top_ips):
+    &#34;&#34;&#34;Генерация таблицы для копирования в биллинг&#34;&#34;&#34;
+    headers = &#34;| IP | Host | Requests | Check Host |&#34;
+    separator = &#34;| --- | --- | --- | --- |&#34;
+
+    rows = []
+    for _, row in top_ips.iterrows():
+        ip = row[&#39;IP&#39;]
+        host = row[&#39;Hostname&#39;]
+        requests = str(row[&#39;Requests&#39;])
+        check_host = f&#34;[Check Host](https://check-host.net/ip-info?host={ip})&#34;
+        rows.append(f&#34;| {ip} | {host} | {requests} | {check_host} |&#34;)
+
+    result = &#34;\n&#34;.join([headers, separator] + rows)
+    return result</code></pre>
+</details>
+</dd>
+<dt id="main.get_date_from_entry"><code class="name flex">
+<span>def <span class="ident">get_date_from_entry</span></span>(<span>entry)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>"Получение даты из поля</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_date_from_entry(entry):
+    &#34;&#34;&#34;&#34;Получение даты из поля&#34;&#34;&#34;
+    date_str = entry.get()
+    try:
+        date = datetime.strptime(date_str, &#34;%d.%m.%Y&#34;).date()
+        return date
+    except ValueError:
+        messagebox.showerror(&#34;Error&#34;, &#34;Invalid date format&#34;)
+        return None</code></pre>
+</details>
+</dd>
+<dt id="main.get_hostname"><code class="name flex">
+<span>def <span class="ident">get_hostname</span></span>(<span>ip)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Получение HostName по IP</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_hostname(ip):
+    &#34;&#34;&#34;Получение HostName по IP&#34;&#34;&#34;
+    try:
+        hostname, _, _ = socket.gethostbyaddr(ip)
+        return hostname
+    except socket.herror:
+        return &#34;Hostname Not Found&#34;</code></pre>
+</details>
+</dd>
+<dt id="main.load_log_file"><code class="name flex">
+<span>def <span class="ident">load_log_file</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Обработка загрузки файла и парсинг логов</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_log_file():
+    &#34;&#34;&#34;Обработка загрузки файла и парсинг логов&#34;&#34;&#34;
+    file_path = filedialog.askopenfilename()
+    ip_text.delete(&#39;1.0&#39;, tk.END)
+    if not file_path:
+        return
+    try:
+        with open(file_path, &#39;r&#39;) as file:
+            log_pattern = r&#39;(\d+\.\d+\.\d+\.\d+) - - \[(.*?)\] &#34;(.*?)&#34; (\d{3}) (\d+) &#34;(.*?)&#34; &#34;(.*?)&#34;&#39;
+            log_data = []
+            for line in file:
+                match = re.match(log_pattern, line)
+                if match:
+                    ip, datetime_str, request_str, status, size, referrer, user_agent = match.groups()
+                    method, path, protocol = request_str.split()
+                    datetime_obj = datetime.strptime(datetime_str, &#34;%d/%b/%Y:%H:%M:%S %z&#34;)
+                    log_data.append([ip, datetime_obj, path, status, user_agent])
+
+            df = pd.DataFrame(log_data, columns=[&#39;IP&#39;, &#39;DateTime&#39;, &#39;Path&#39;, &#39;Status&#39;, &#39;UserAgent&#39;])
+            analyze_logs(df)
+    except:
+        messagebox.showerror(&#34;Error&#34;, &#34;Could not read the file&#34;)</code></pre>
+</details>
+</dd>
+<dt id="main.tree_popup"><code class="name flex">
+<span>def <span class="ident">tree_popup</span></span>(<span>event, menu)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Всплывающее меню для копирования из таблиц (в самих таблицах бинл на ПКМ)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def tree_popup(event, menu):
+    &#34;&#34;&#34;Всплывающее меню для копирования из таблиц (в самих таблицах бинл на ПКМ)&#34;&#34;&#34;
+    region = event.widget.identify_region(event.x, event.y)
+    if region == &#34;cell&#34;:
+        menu.post(event.x_root, event.y_root)</code></pre>
+</details>
+</dd>
+<dt id="main.update_ip_list"><code class="name flex">
+<span>def <span class="ident">update_ip_list</span></span>(<span>data_frame)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Обновление текстового поля с отсортироваными по запросам IP</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_ip_list(data_frame):
+    &#34;&#34;&#34;Обновление текстового поля с отсортироваными по запросам IP&#34;&#34;&#34;
+    global ip_counts
+    ip_counts = data_frame
+    ip_text.insert(tk.END, ip_counts.to_string(index=False))</code></pre>
+</details>
+</dd>
+<dt id="main.update_path_table"><code class="name flex">
+<span>def <span class="ident">update_path_table</span></span>(<span>df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Обновление таблицы с URL</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_path_table(df):
+    &#34;&#34;&#34;Обновление таблицы с URL&#34;&#34;&#34;
+    for row in path_table.get_children():
+        path_table.delete(row)
+    path_counts = df[&#39;Path&#39;].value_counts().reset_index()
+    path_counts.columns = [&#39;Path&#39;, &#39;Requests&#39;]
+    total_requests = sum(path_counts[&#39;Requests&#39;])
+
+    for index, row in path_counts.iterrows():
+        percent = (row[&#39;Requests&#39;] / total_requests * 100)
+        path_table.insert(&#34;&#34;, tk.END, values=(row[&#39;Path&#39;], row[&#39;Requests&#39;], f&#34;{percent:.2f}%&#34;))</code></pre>
+</details>
+</dd>
+<dt id="main.update_status_table"><code class="name flex">
+<span>def <span class="ident">update_status_table</span></span>(<span>df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Обновление таблицы со статусами</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_status_table(df):
+    &#34;&#34;&#34;Обновление таблицы со статусами&#34;&#34;&#34;
+    for row in status_table.get_children():
+        status_table.delete(row)
+    status_counts = df[&#39;Status&#39;].value_counts().reset_index()
+    status_counts.columns = [&#39;Status&#39;, &#39;Count&#39;]
+    total_requests = sum(status_counts[&#39;Count&#39;])
+
+    for index, row in status_counts.iterrows():
+        percent = (row[&#39;Count&#39;] / total_requests * 100)
+        status_table.insert(&#34;&#34;, tk.END, values=(row[&#39;Status&#39;], row[&#39;Count&#39;], f&#34;{percent:.2f}%&#34;))</code></pre>
+</details>
+</dd>
+<dt id="main.update_user_agent_table"><code class="name flex">
+<span>def <span class="ident">update_user_agent_table</span></span>(<span>df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Обновление таблицы с User-agent</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_user_agent_table(df):
+    &#34;&#34;&#34;Обновление таблицы с User-agent&#34;&#34;&#34;
+    user_agent_table.delete(*user_agent_table.get_children())
+    user_agent_counts = df[&#39;UserAgent&#39;].value_counts().reset_index()
+    user_agent_counts.columns = [&#39;UserAgent&#39;, &#39;Requests&#39;]
+    total_requests = sum(user_agent_counts[&#39;Requests&#39;])
+
+    for index, row in user_agent_counts.iterrows():
+        percent = (row[&#39;Requests&#39;] / total_requests * 100) if total_requests &gt; 0 else 0
+        user_agent_table.insert(&#34;&#34;, tk.END, values=(row[&#39;UserAgent&#39;], row[&#39;Requests&#39;], f&#34;{percent:.2f}%&#34;))</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="main.analyze_logs" href="#main.analyze_logs">analyze_logs</a></code></li>
+<li><code><a title="main.copy_from_text" href="#main.copy_from_text">copy_from_text</a></code></li>
+<li><code><a title="main.copy_selected_rows" href="#main.copy_selected_rows">copy_selected_rows</a></code></li>
+<li><code><a title="main.copy_selected_rows_path" href="#main.copy_selected_rows_path">copy_selected_rows_path</a></code></li>
+<li><code><a title="main.copy_selected_rows_status" href="#main.copy_selected_rows_status">copy_selected_rows_status</a></code></li>
+<li><code><a title="main.copy_selected_rows_user" href="#main.copy_selected_rows_user">copy_selected_rows_user</a></code></li>
+<li><code><a title="main.copy_top_ips" href="#main.copy_top_ips">copy_top_ips</a></code></li>
+<li><code><a title="main.format_for_clipboard" href="#main.format_for_clipboard">format_for_clipboard</a></code></li>
+<li><code><a title="main.get_date_from_entry" href="#main.get_date_from_entry">get_date_from_entry</a></code></li>
+<li><code><a title="main.get_hostname" href="#main.get_hostname">get_hostname</a></code></li>
+<li><code><a title="main.load_log_file" href="#main.load_log_file">load_log_file</a></code></li>
+<li><code><a title="main.tree_popup" href="#main.tree_popup">tree_popup</a></code></li>
+<li><code><a title="main.update_ip_list" href="#main.update_ip_list">update_ip_list</a></code></li>
+<li><code><a title="main.update_path_table" href="#main.update_path_table">update_path_table</a></code></li>
+<li><code><a title="main.update_status_table" href="#main.update_status_table">update_status_table</a></code></li>
+<li><code><a title="main.update_user_agent_table" href="#main.update_user_agent_table">update_user_agent_table</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
